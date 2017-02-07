@@ -1,4 +1,4 @@
-class FlashCard {
+class Card {
   constructor({question, answer}) {
     this.question = question;
     this.answer = answer;
@@ -14,11 +14,11 @@ class PlayerGuess {
   }
 }
 
-let card1 = new FlashCard({question:'What is the best movie of all time?', answer: 'Top Gun'});
-let card2 = new FlashCard({question:'What is my name?', answer: 'Julian'});
-let card3 = new FlashCard({question:'What is the capitol of AK?', answer: 'Juneau'});
+let card1 = new Card({question:'What is the best movie of all time?', answer: 'Top Gun'});
+let card2 = new Card({question:'What is my name?', answer: 'Julian'});
+let card3 = new Card({question:'What is the capitol of AK?', answer: 'Juneau'});
 
 
 
-export default FlashCard;
+export default Card;
 // export default PlayerGuess;
