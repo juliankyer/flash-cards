@@ -5,14 +5,14 @@ class Card {
   }
 }
 
-class PlayerGuess {
-  constructor({response, card}) {
-    this.response = response;
-    this.card = card;
-    this.correct = this.response === card.answer ? true : false;
-    this.feedback = this.correct ? 'Correct!' : 'Incorrect.'
-  }
-}
+// class PlayerGuess {
+//   constructor({response, card}) {
+//     this.response = response;
+//     this.card = card;
+//     this.correct = this.response === card.answer ? true : false;
+//     this.feedback = this.correct ? 'Correct!' : 'Incorrect.'
+//   }
+// }
 
 let card1 = new Card({question:'What is the best movie of all time?', answer: 'Top Gun'});
 let card2 = new Card({question:'What is my name?', answer: 'Julian'});
