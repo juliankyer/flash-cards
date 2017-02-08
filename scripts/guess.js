@@ -1,6 +1,6 @@
 require('./card');
 
-class PlayerGuess {
+class Guess {
   constructor({response, card}) {
     this.response = response;
     this.card = card;
@@ -9,4 +9,4 @@ class PlayerGuess {
   }
 }
 
-export default PlayerGuess;
+export default Guess;
