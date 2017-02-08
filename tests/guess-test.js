@@ -3,13 +3,16 @@ import Card from '../scripts/card'
 import Guess from '../scripts/guess';
 
 describe('user guess check', ()=> {
+  it('should create new guesses', ()=> {
+    let card1 = new Card({question:'Who are the top 5 rappers of all time?', answer:'Dylan, Dylan, Dylan, Dylan, and Dylan'});
+    let guess = new Guess({response:'Ice T', card: card1});
+    expect(guess).to.be.an.instanceof(Guess);
+  })
   it('should be able to take in a user response and the card being shown', ()=> {
     let card1 = new Card({question:'Who are the top 5 rappers of all time?', answer:'Dylan, Dylan, Dylan, Dylan, and Dylan'});
     let guess = new Guess({response:'Ice T', card: card1});
     expect(guess.response).to.equal('Ice T');
     expect(guess.card).to.equal(card1);
-    // assert.equal(guess.response, 'Ice T');
-    // assert.equal(guess.card, card1);
   });
 
   it('should be able to give feedback to incorrect responses', ()=> {
@@ -27,9 +30,5 @@ describe('user guess check', ()=> {
     expect(guess.response).to.equal('Top Gun');
     expect(guess.correct).to.be.true;
     expect(guess.feedback).to.equal('Correct!')
-    // assert.equal(guess.response, 'Top Gun');
-    // assert.equal(guess.correct, true);
-    // assert.equal(guess.feedback, 'Correct!');
   });
-
 });
