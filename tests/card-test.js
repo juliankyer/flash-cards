@@ -6,7 +6,7 @@ describe('flash cards', ()=> {
     let card = new Card({question:'Best movie of all time?', answer:'Top Gun'});
     expect(card).to.be.an.instanceof(Card);
   });
-  
+
   it('should have a question', ()=> {
     let card = new Card({question:'Best movie of all time?', answer:'Top Gun'});
     expect(card.question).to.equal('Best movie of all time?');
