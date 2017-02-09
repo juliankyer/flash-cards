@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import Card from '../scripts/card'
-import Guess from '../scripts/guess';
+import Card from '../scripts/Card'
+import Guess from '../scripts/Guess';
 
 describe('user guess check', ()=> {
   it('should create new guesses', ()=> {

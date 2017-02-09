@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import Card from '../scripts/card';
+import Card from '../scripts/Card';
 
 describe('flash cards', ()=> {
   it('should create a new instance of card', ()=> {

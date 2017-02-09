@@ -1,4 +1,4 @@
-require('./card');
+import Card from '../scripts/Card';
 
 class Guess {
   constructor({response, card}) {

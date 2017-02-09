@@ -1,6 +1,6 @@
-require('./card');
-require('./deck');
-require('./guess');
+import Card from '../scripts/Card';
+import Deck from '../scripts/Deck';
+import Guess from '../scripts/Guess';
 
 class Round {
   constructor(deck) {
@@ -24,6 +24,5 @@ class Round {
     return (this.numberCorrect / this.guesses.length) * 100;
   }
 }
-
 
 export default Round;

@@ -1,7 +1,6 @@
 import { expect } from 'chai';
-import Card from '../scripts/card';
-import Deck from '../scripts/deck';
-
+import Card from '../scripts/Card';
+import Deck from '../scripts/Deck';
 
 describe('the flashcard deck', ()=> {
   it('should store cards in an array', ()=> {

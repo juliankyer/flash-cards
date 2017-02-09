@@ -1,8 +1,8 @@
 import { expect } from 'chai';
-import Card from '../scripts/card';
-import Deck from '../scripts/deck';
-import Guess from '../scripts/guess';
-import Round from '../scripts/round';
+import Card from '../scripts/Card';
+import Deck from '../scripts/Deck';
+import Guess from '../scripts/Guess';
+import Round from '../scripts/Round';
 
 describe('the rounds of cards', ()=> {
   it('should be able to create a new round with a deck', ()=> {

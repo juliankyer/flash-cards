@@ -1,4 +1,4 @@
-require('./card');
+import Card from '../scripts/Card'
 
 class Deck {
   constructor(...cards) {
